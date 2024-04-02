@@ -18,7 +18,7 @@ class Player(GameSprite):
         '''
         Реагирует на нажатие клавишь
         '''
-        
+
         key_pressed = key.get_pressed()
         if key_pressed[K_LEFT]:
             self.rect.x -= self.speed
@@ -36,7 +36,7 @@ class Player(GameSprite):
 
         #Сейчас
         now = time.get_ticks()
-
+        # выарвыаорвыоар
         if now - self.last_bullet_time >= self.bullet_delay:
             self.bullets.add(Bullet('bullet.png',self.rect.x,self.rect.top, 6, self.window))
 

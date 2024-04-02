@@ -1,0 +1,11 @@
+Писать в терминале
+
+!.Создать виртуальное окружение для этого 
+py -m venv venv
+2. Активировать
+.\vутм\Scripts\activate
+
+3. Скачиваенм модули Python
+pip install pygame 
+4.Смотрим какие модули скачены
+pip freeze ИЛИ pip list 
