@@ -45,6 +45,7 @@ enemies = sprite.Group()
 
 speeds = [1,1,2,2,3]
 
+#Создаем врагов
 for i in range(5):
     enemies.add(
         Enemy(
@@ -53,9 +54,12 @@ for i in range(5):
     ) 
 
 while game:
-    #
+    # Отображаем, помещаем фон на экран
     window.blit(bg, (0, 0))
+
+    # Проверяем события которые произошли в каждом отдельном кадре
     for e in event.get():
+        # Если тип события выше то прирываем игру
         if e.type == QUIT:
             game = False
 

@@ -15,6 +15,10 @@ class Player(GameSprite):
 
 
     def update(self):
+        '''
+        Реагирует на нажатие клавишь
+        '''
+        
         key_pressed = key.get_pressed()
         if key_pressed[K_LEFT]:
             self.rect.x -= self.speed
