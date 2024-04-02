@@ -9,3 +9,4 @@ py -m venv venv
 pip install pygame 
 4.Смотрим какие модули скачены
 pip freeze ИЛИ pip list 
+pip install pygame
